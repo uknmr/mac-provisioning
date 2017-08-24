@@ -1,0 +1,21 @@
+taps:
+  - homebrew/binary
+  - homebrew/dupes
+  - caskroom/versions
+  - sanemat/font
+homebrew_packages:
+  - {name: ansible}
+  - {name: curl}
+  - {name: fish}
+  - {name: gibo}
+  - {name: git}
+  - {name: heroku}
+  - {name: mas} # Mac App Store command-line interface
+  - {name: neovim}
+  - {name: nodebrew}
+#  - {name: ricty}
+  - {name: source-highlight}
+#  - {name: thefuck}
+  - {name: tree}
+  - {name: wget}
+

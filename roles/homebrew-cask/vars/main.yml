@@ -1,0 +1,22 @@
+homebrew_cask_packages:
+  - {name: adobe-creative-cloud}
+  - {name: amazon-music}
+  - {name: appcleaner}
+  - {name: atom}
+  - {name: gitify}
+  - {name: gitup}
+  - {name: google-chrome}
+  - {name: google-japanese-ime}
+  - {name: gyazo}
+#  - {name: hyperswitch}
+  - {name: iterm2}
+  - {name: karabiner-elements}
+  - {name: sketch}
+  - {name: skitch}
+  - {name: slack-beta}
+  - {name: spectacle}
+  - {name: spotify}
+  - {name: tweeten}
+  - {name: vagrant}
+  - {name: virtualbox}
+

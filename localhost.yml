@@ -1,0 +1,11 @@
+---
+- name: Setup my macOS
+  hosts: localhost
+  connection: local
+  gather_facts: no
+  roles:
+    - {role: homebrew,      tags: [homebrew]}
+    - {role: homebrew-cask, tags: [homebrew-cask]}
+    #- {role: fish-shell,    tags: [fish-shell]}
+    #- {role: atom,          tags: [atom]}
+

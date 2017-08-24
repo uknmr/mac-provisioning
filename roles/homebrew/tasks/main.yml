@@ -1,0 +1,16 @@
+- name: homebrew の formula を追加
+  homebrew_tap:
+    name: '{{item}}'
+    state: present
+  with_items: '{{taps}}'
+
+- name: homebrew をアップデート
+  homebrew:
+    update_homebrew: yes
+
+- name: brew パッケージをインストール
+  homebrew:
+    name: '{{item.name}}'
+    state: '{{item.state | default("present")}}'
+  with_items: '{{homebrew_packages}}'
+
