@@ -1,0 +1,25 @@
+- name: App Store アカウントを取得
+  command: mas account
+  register: mas_account_result
+  failed_when: mas_account_result.rc > 1
+  changed_when: false
+
+- name: Email とパスワードと 2FA で App Store にサインイン
+  shell: mas signin "{{mas_email}}" --dialog
+  register: mas_signin_result
+  when: mas_account_result.rc == 1 and mas_email != ''
+
+- name: App Store のインストール済みアプリケーション
+  command: mas list
+  register: mas_list
+  check_mode: no
+  changed_when: false
+
+- name: App Store アプリケーションをインストール
+  command: mas install "{{item.id}}"
+  with_items: "{{mas_applications}}"
+  when: "'{{item.id}}' not in mas_list.stdout"
+
+- name: App Store アプリケーションをアップデート
+  command: mas upgrade
+  when: mas_upgrade_all_apps

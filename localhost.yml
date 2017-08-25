@@ -6,6 +6,7 @@
   roles:
     - {role: homebrew,      tags: [homebrew]}
     - {role: homebrew-cask, tags: [homebrew-cask]}
+    - {role: mac-app-store, tags: [mac-app-store]}
     #- {role: fish-shell,    tags: [fish-shell]}
     #- {role: atom,          tags: [atom]}
 

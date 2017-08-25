@@ -1,0 +1,4 @@
+mas_applications:
+  - {name: 'GIPHY Capture', id: 668208984}
+
+mas_upgrade_all_apps: no
