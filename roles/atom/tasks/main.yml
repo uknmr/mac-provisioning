@@ -1,0 +1,10 @@
+- name: Atom のインストール済みプラグイン
+  command: apm list
+  register: apm_list
+  check_mode: no
+  changed_when: false
+
+- name: Atom プラグインをインストール
+  command: apm install "{{item.name}}"
+  with_items: "{{atom_plugins}}"
+  when: "'{{item.name}}' not in apm_list.stdout"
