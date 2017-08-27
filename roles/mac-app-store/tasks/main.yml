@@ -5,7 +5,7 @@
   changed_when: false
 
 - name: Email とパスワードと 2FA で App Store にサインイン
-  shell: mas signin "{{mas_email}}" --dialog
+  command: mas signin "{{mas_email}}" --dialog
   register: mas_signin_result
   when: mas_account_result.rc == 1 and mas_email != ''
 
