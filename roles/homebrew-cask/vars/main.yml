@@ -3,6 +3,7 @@ homebrew_cask_packages:
   - {name: amazon-music}
   - {name: appcleaner}
   - {name: atom}
+  - {name: flux}
   - {name: gitify}
   - {name: gitup}
   - {name: google-chrome}
@@ -19,4 +20,3 @@ homebrew_cask_packages:
   - {name: tweeten}
   - {name: vagrant}
   - {name: virtualbox}
-
