@@ -13,9 +13,8 @@ homebrew_packages:
   - {name: mas} # Mac App Store command-line interface
   - {name: neovim}
   - {name: nodebrew}
-#  - {name: ricty}
+  # - {name: ricty}
   - {name: source-highlight}
-#  - {name: thefuck}
+  # - {name: thefuck}
   - {name: tree}
   - {name: wget}
-

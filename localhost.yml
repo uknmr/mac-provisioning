@@ -8,4 +8,4 @@
     - {role: homebrew-cask, tags: [homebrew-cask]}
     - {role: mac-app-store, tags: [mac-app-store]}
     - {role: atom,          tags: [atom]}
-    #- {role: fish-shell,    tags: [fish-shell]}
+    - {role: fish-shell,    tags: [fish-shell]}

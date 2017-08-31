@@ -1,0 +1,35 @@
+- name: ログインシェル一覧
+  command: cat /etc/shells
+  register: shells
+  changed_when: false
+
+- name: ログインシェル一覧に fish を追加
+  become: yes
+  shell: echo `which fish` |tee -a /etc/shells
+  when: "'fish' not in shells.stdout"
+
+- name: デフォルトシェルを fish に変更
+  become: yes
+  # 効いていないらしい
+  command: chsh -s /usr/local/bin/fish
+  changed_when: false
+
+- name: fisherman を確認
+  command: /usr/local/bin/fish -c "fisher -v"
+  register: fisher
+  changed_when: false
+
+- name: fisherman をインストール
+  get_url:
+    url: "https://git.io/fisherman"
+    dest: "~/.config/fish/functions/fisher.fish"
+  when: "'fisher' not in fisher.stdout"
+
+- name: fisher プラグイン一覧
+  command: /usr/local/bin/fish -c "fisher ls"
+  register: fisher
+  changed_when: false
+
+- name: bobthefish をインストール
+  command: /usr/local/bin/fish -c "fisher install omf/theme-bobthefish"
+  when: "'bobthefish' not in fisher.stdout"
