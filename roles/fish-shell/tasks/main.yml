@@ -25,11 +25,13 @@
     dest: "~/.config/fish/functions/fisher.fish"
   when: "'fisher' not in fisher.stdout"
 
-- name: fisher プラグイン一覧
+- name: fish のインストール済みプラグイン
   command: /usr/local/bin/fish -c "fisher ls"
   register: fisher
   changed_when: false
 
-- name: bobthefish をインストール
-  command: /usr/local/bin/fish -c "fisher install omf/theme-bobthefish"
-  when: "'bobthefish' not in fisher.stdout"
+# fishfile つかった fisherman のほうがいいのか
+- name: fish プラグインをインストール
+  command: /usr/local/bin/fish -c "fisher install '{{item.name}}'"
+  with_items: "{{fish_plugins}}"
+  when: "'{{item.id}}' not in fisher.stdout"

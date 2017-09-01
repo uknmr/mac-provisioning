@@ -1,0 +1,5 @@
+fish_plugins:
+  - {id: "bobthefish", name: "omf/theme-bobthefish"}
+  - {id: "peco",       name: "omf/plugin-peco"}
+  # 補完の効くエイリアス
+  - {id: "balias",     name: "omf/plugin-balias"}

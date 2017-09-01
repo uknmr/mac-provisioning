@@ -13,6 +13,7 @@ homebrew_packages:
   - {name: mas} # Mac App Store command-line interface
   - {name: neovim}
   - {name: nodebrew}
+  - {name: peco}
   # - {name: ricty}
   - {name: source-highlight}
   # - {name: thefuck}
