@@ -19,3 +19,4 @@ homebrew_packages:
   # - {name: thefuck}
   - {name: tree}
   - {name: wget}
+  - {name: yarn}
