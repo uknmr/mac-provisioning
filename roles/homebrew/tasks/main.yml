@@ -11,6 +11,5 @@
 - name: brew パッケージをインストール
   homebrew:
     name: '{{item.name}}'
-    state: '{{item.state | default("present")}}'
+    state: '{{item.state | default("latest")}}'
   with_items: '{{homebrew_packages}}'
-
