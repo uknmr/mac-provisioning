@@ -3,6 +3,7 @@ homebrew_cask_packages:
   - {name: amazon-music}
   - {name: appcleaner}
   - {name: atom}
+  - {name: firefoxnightly}
   - {name: flux}
   - {name: gitify}
   - {name: gitup}
