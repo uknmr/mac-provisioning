@@ -1,6 +1,7 @@
 atom_plugins:
   - {name: activate-power-mode}
   - {name: atom-beautify}
+  - {name: atom-ternjs}
   - {name: autocomplete-emojis}
   - {name: autocomplete-paths}
   - {name: auto-update-packages}
@@ -22,6 +23,7 @@ atom_plugins:
   - {name: linter-stylelint}
   - {name: linter-ui-default}
   - {name: pigments}
+  - {name: pretty-json}
   - {name: split-diff}
   - {name: vim-mode-plus}
   - {name: tree-view-git-status}
