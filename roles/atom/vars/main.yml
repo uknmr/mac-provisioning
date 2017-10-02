@@ -22,8 +22,10 @@ atom_plugins:
   - {name: linter-eslint}
   - {name: linter-stylelint}
   - {name: linter-ui-default}
+  - {name: nice-index}
   - {name: pigments}
   - {name: pretty-json}
+  - {name: react-snippets}
   - {name: split-diff}
   - {name: vim-mode-plus}
   - {name: tree-view-git-status}
