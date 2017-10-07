@@ -1,6 +1,7 @@
 atom_plugins:
   - {name: activate-power-mode}
   - {name: atom-beautify}
+  - {name: atom-ide-ui}
   - {name: atom-ternjs}
   - {name: autocomplete-emojis}
   - {name: autocomplete-paths}
