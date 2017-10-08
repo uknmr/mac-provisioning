@@ -15,6 +15,7 @@ atom_plugins:
   - {name: git-time-machine}
   - {name: highlight-selected}
   - {name: iceberg-syntax}
+  - {name: ide-typescript}
   - {name: intentions}
   - {name: language-babel}
   - {name: language-markdown}
