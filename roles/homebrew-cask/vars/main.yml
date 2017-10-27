@@ -18,6 +18,7 @@ homebrew_cask_packages:
   - {name: slack-beta}
   - {name: spectacle}
   - {name: spotify}
+  - {name: tableplus}
   - {name: tweeten}
   - {name: vagrant}
   - {name: virtualbox}
