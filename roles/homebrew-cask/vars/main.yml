@@ -13,6 +13,7 @@ homebrew_cask_packages:
 #  - {name: hyperswitch}
   - {name: iterm2}
   - {name: karabiner-elements}
+  - {name: kindle}
   - {name: sketch}
   - {name: skitch}
   - {name: slack-beta}
