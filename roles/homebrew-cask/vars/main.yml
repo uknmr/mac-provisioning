@@ -1,19 +1,22 @@
 homebrew_cask_packages:
+  - {name: abstract}
   - {name: adobe-creative-cloud}
   - {name: amazon-music}
   - {name: appcleaner}
   - {name: atom}
   - {name: firefoxnightly}
   - {name: flux}
+  # - {name: giphy}
   - {name: gitify}
   - {name: gitup}
   - {name: google-chrome}
   - {name: google-japanese-ime}
   - {name: gyazo}
-#  - {name: hyperswitch}
   - {name: iterm2}
   - {name: karabiner-elements}
   - {name: kindle}
+  - {name: optimage}
+  - {name: rocket}
   - {name: sketch}
   - {name: skitch}
   - {name: slack-beta}
@@ -23,3 +26,5 @@ homebrew_cask_packages:
   - {name: tweeten}
   - {name: vagrant}
   - {name: virtualbox}
+  - {name: visual-studio-code}
+  - {name: zeplin}

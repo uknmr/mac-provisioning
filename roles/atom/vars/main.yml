@@ -3,6 +3,7 @@ atom_plugins:
   - {name: atom-beautify}
   - {name: atom-ide-ui}
   - {name: atom-ternjs}
+  - {name: atom-typescript}
   - {name: autocomplete-emojis}
   - {name: autocomplete-paths}
   - {name: auto-update-packages}
@@ -12,10 +13,10 @@ atom_plugins:
   - {name: esdoc}
   - {name: expose}
   - {name: file-icons}
+  - {name: git-blame}
   - {name: git-time-machine}
   - {name: highlight-selected}
   - {name: iceberg-syntax}
-  - {name: ide-typescript}
   - {name: intentions}
   - {name: language-babel}
   - {name: language-markdown}
