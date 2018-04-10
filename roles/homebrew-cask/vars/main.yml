@@ -14,6 +14,7 @@ homebrew_cask_packages:
   - {name: gyazo}
   - {name: iterm2}
   - {name: karabiner-elements}
+  - {name: keycastr}
   - {name: kindle}
   # - {name: optimage}
   - {name: rocket}
