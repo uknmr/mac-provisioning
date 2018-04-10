@@ -1,7 +1,7 @@
 homebrew_cask_packages:
   - {name: abstract}
   - {name: adobe-creative-cloud}
-  - {name: amazon-music}
+  # - {name: amazon-music}
   - {name: appcleaner}
   - {name: atom}
   - {name: firefoxnightly}
@@ -15,7 +15,7 @@ homebrew_cask_packages:
   - {name: iterm2}
   - {name: karabiner-elements}
   - {name: kindle}
-  - {name: optimage}
+  # - {name: optimage}
   - {name: rocket}
   - {name: sketch}
   - {name: skitch}

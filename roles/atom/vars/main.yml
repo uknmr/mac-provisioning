@@ -10,7 +10,6 @@ atom_plugins:
   - {name: busy-signal}
   - {name: editorconfig}
   - {name: emmet}
-  - {name: esdoc}
   - {name: expose}
   - {name: file-icons}
   - {name: git-blame}

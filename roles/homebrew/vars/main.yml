@@ -1,6 +1,4 @@
 taps:
-  - homebrew/binary
-  - homebrew/dupes
   - caskroom/versions
   - sanemat/font
 homebrew_packages:

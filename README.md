@@ -2,6 +2,33 @@
 
 ## つかいかた
 
+### 準備編
+
+とりあえず Xcode いれよう。
+
+```bash
+$ sudo xcodebuild -license
+```
+
+あと Homebrew をいれないと始まらない。
+
+```bash
+$ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)
+$ brew doctor # 念のため
+$ brew doctor # brew doctor でなんか言われたらね
+```
+
+Ansible も構築に必要なのでいれておく。
+
+```bash
+$ brew install ansible
+```
+
+GitHub からこの repository を落としてくる。
+[これ](https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/)をやっておく。
+
+### Ansible の流しかた
+
 ```bash
 $ ansible-playbook site.yml -vK
 ```
@@ -12,7 +39,13 @@ $ ansible-playbook site.yml -vK
 $ ansible-playbook site.yml -vK --tags=homebrew,fish-shell
 ```
 
-## 構成
+fisherman のスクリプト壊れてるんだけど、とりあえず…
+
+```
+$ curl -Lo ~/.config/fish/functions/fisher.fish --create-dirs https://git.io/fisher
+```
+
+### 構成
 
 [Best Practices](http://docs.ansible.com/ansible/latest/playbooks_best_practices.html) を参考にした。
 
@@ -51,3 +84,31 @@ $ ansible-playbook site.yml -vK --tags=homebrew,fish-shell
 ├── localhost.yml
 └── site.yml
 ```
+
+### その他
+
+全然自動化できていない。それらをここに記しておく。
+
+- Terminal のフォント設定を　Ricty for Powerline の 14px に変更する
+- Spectacle を設定
+  - アクセシビリティ権限を許可
+  - background 機動
+  - フルスクリーンを ⎇ + ⌘ + F による検索がつかえなくなるので ⎇ + ⌘ + M に変更する
+- f.lux を設定
+  - Daytime で 3,800K
+- Google 日本語入力
+  - 半角スペース
+  - バックスラッシュ
+- 入力ソース
+  - Google 日本語 ひらがな
+  - Google 日本語 英数半角
+  - デフォルトを削除
+- Chrome の検索設定を追加
+- Gitify
+  - ログイン
+  - On Click, Mark as Read
+  - Tray Icon only
+- 一般
+  - メニューバーと Dock を暗くする
+  - メニューバーを自動的に表示 / 非表示
+  - スクロールバーのクリック時: クリックされた場所にジャンプ

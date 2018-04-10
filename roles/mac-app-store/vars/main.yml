@@ -1,4 +1,6 @@
 mas_applications:
   - {name: 'GIPHY Capture', id: 668208984}
+  - {name: 'Contrast — Color Accessibility', id: 1254981365}
+  - {name: 'Kromatic', id: 1049086746}
 
 mas_upgrade_all_apps: no
